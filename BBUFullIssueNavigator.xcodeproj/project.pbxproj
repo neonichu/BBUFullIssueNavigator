@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1B815E618F9D3AF0027B26D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B815E518F9D3AF0027B26D /* AppKit.framework */; };
+		A1B815E818F9D3AF0027B26D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B815E718F9D3AF0027B26D /* Foundation.framework */; };
+		A1B815EE18F9D3AF0027B26D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1B815EC18F9D3AF0027B26D /* InfoPlist.strings */; };
+		A1B815F118F9D3AF0027B26D /* BBUFullIssueNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B815F018F9D3AF0027B26D /* BBUFullIssueNavigator.m */; };
+		A1B815FA18F9D3D10027B26D /* NSObject+YOLO.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B815F918F9D3D10027B26D /* NSObject+YOLO.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1B815E218F9D3AF0027B26D /* BBUFullIssueNavigator.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBUFullIssueNavigator.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B815E518F9D3AF0027B26D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A1B815E718F9D3AF0027B26D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A1B815EB18F9D3AF0027B26D /* BBUFullIssueNavigator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BBUFullIssueNavigator-Info.plist"; sourceTree = "<group>"; };
+		A1B815ED18F9D3AF0027B26D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1B815EF18F9D3AF0027B26D /* BBUFullIssueNavigator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBUFullIssueNavigator.h; sourceTree = "<group>"; };
+		A1B815F018F9D3AF0027B26D /* BBUFullIssueNavigator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBUFullIssueNavigator.m; sourceTree = "<group>"; };
+		A1B815F218F9D3AF0027B26D /* BBUFullIssueNavigator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BBUFullIssueNavigator-Prefix.pch"; sourceTree = "<group>"; };
+		A1B815F818F9D3D10027B26D /* NSObject+YOLO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+YOLO.h"; path = "contrib/NSObject+YOLO.h"; sourceTree = SOURCE_ROOT; };
+		A1B815F918F9D3D10027B26D /* NSObject+YOLO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YOLO.m"; path = "contrib/NSObject+YOLO.m"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1B815DF18F9D3AF0027B26D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B815E618F9D3AF0027B26D /* AppKit.framework in Frameworks */,
+				A1B815E818F9D3AF0027B26D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1B815D918F9D3AF0027B26D = {
+			isa = PBXGroup;
+			children = (
+				A1B815E918F9D3AF0027B26D /* BBUFullIssueNavigator */,
+				A1B815E418F9D3AF0027B26D /* Frameworks */,
+				A1B815E318F9D3AF0027B26D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1B815E318F9D3AF0027B26D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1B815E218F9D3AF0027B26D /* BBUFullIssueNavigator.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1B815E418F9D3AF0027B26D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1B815E518F9D3AF0027B26D /* AppKit.framework */,
+				A1B815E718F9D3AF0027B26D /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1B815E918F9D3AF0027B26D /* BBUFullIssueNavigator */ = {
+			isa = PBXGroup;
+			children = (
+				A1B815EF18F9D3AF0027B26D /* BBUFullIssueNavigator.h */,
+				A1B815F018F9D3AF0027B26D /* BBUFullIssueNavigator.m */,
+				A1B815F818F9D3D10027B26D /* NSObject+YOLO.h */,
+				A1B815F918F9D3D10027B26D /* NSObject+YOLO.m */,
+				A1B815EA18F9D3AF0027B26D /* Supporting Files */,
+			);
+			path = BBUFullIssueNavigator;
+			sourceTree = "<group>";
+		};
+		A1B815EA18F9D3AF0027B26D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1B815EB18F9D3AF0027B26D /* BBUFullIssueNavigator-Info.plist */,
+				A1B815EC18F9D3AF0027B26D /* InfoPlist.strings */,
+				A1B815F218F9D3AF0027B26D /* BBUFullIssueNavigator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1B815E118F9D3AF0027B26D /* BBUFullIssueNavigator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B815F518F9D3AF0027B26D /* Build configuration list for PBXNativeTarget "BBUFullIssueNavigator" */;
+			buildPhases = (
+				A1B815DE18F9D3AF0027B26D /* Sources */,
+				A1B815DF18F9D3AF0027B26D /* Frameworks */,
+				A1B815E018F9D3AF0027B26D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BBUFullIssueNavigator;
+			productName = BBUFullIssueNavigator;
+			productReference = A1B815E218F9D3AF0027B26D /* BBUFullIssueNavigator.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1B815DA18F9D3AF0027B26D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Boris Bügling";
+			};
+			buildConfigurationList = A1B815DD18F9D3AF0027B26D /* Build configuration list for PBXProject "BBUFullIssueNavigator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A1B815D918F9D3AF0027B26D;
+			productRefGroup = A1B815E318F9D3AF0027B26D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1B815E118F9D3AF0027B26D /* BBUFullIssueNavigator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1B815E018F9D3AF0027B26D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B815EE18F9D3AF0027B26D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1B815DE18F9D3AF0027B26D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B815FA18F9D3D10027B26D /* NSObject+YOLO.m in Sources */,
+				A1B815F118F9D3AF0027B26D /* BBUFullIssueNavigator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1B815EC18F9D3AF0027B26D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1B815ED18F9D3AF0027B26D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1B815F318F9D3AF0027B26D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A1B815F418F9D3AF0027B26D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A1B815F618F9D3AF0027B26D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BBUFullIssueNavigator/BBUFullIssueNavigator-Prefix.pch";
+				INFOPLIST_FILE = "BBUFullIssueNavigator/BBUFullIssueNavigator-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		A1B815F718F9D3AF0027B26D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BBUFullIssueNavigator/BBUFullIssueNavigator-Prefix.pch";
+				INFOPLIST_FILE = "BBUFullIssueNavigator/BBUFullIssueNavigator-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1B815DD18F9D3AF0027B26D /* Build configuration list for PBXProject "BBUFullIssueNavigator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B815F318F9D3AF0027B26D /* Debug */,
+				A1B815F418F9D3AF0027B26D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B815F518F9D3AF0027B26D /* Build configuration list for PBXNativeTarget "BBUFullIssueNavigator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B815F618F9D3AF0027B26D /* Debug */,
+				A1B815F718F9D3AF0027B26D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1B815DA18F9D3AF0027B26D /* Project object */;
+}
