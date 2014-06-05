@@ -1,3 +1,9 @@
+Xcode 5.1 fixes the issue navigator, so you won't need this plugin anymore. It just stays here for historical purposes.
+
+![](issue-nav-fixed.png)
+
+---
+
 Xcode plugin for showing all issue content in the issue navigator. No more ellipsis!
 
 ![](screenshot.png)
