@@ -1,4 +1,4 @@
-Xcode 5.1 fixes the issue navigator, so you won't need this plugin anymore. It just stays here for historical purposes.
+Xcode 5.1 fixes the issue navigator, so you won't need this plugin anymore. It just stays here mostly for historical purposes or if you want to see more than ten lines of your issues.
 
 ![](issue-nav-fixed.png)
 
