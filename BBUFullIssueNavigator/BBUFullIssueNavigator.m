@@ -8,8 +8,8 @@
 
 #import <objc/runtime.h>
 
+#import "Aspects.h"
 #import "BBUFullIssueNavigator.h"
-#import "NSObject+YOLO.h"
 
 static BBUFullIssueNavigator *sharedPlugin;
 
@@ -49,15 +49,17 @@ static BBUFullIssueNavigator *sharedPlugin;
         // reference to plugin's bundle, for resource acccess
         self.bundle = plugin;
         
-        [[objc_getClass("IDEIssueNavigatorDataCell") new] yl_swizzleSelector:@selector(rowHeightForItem:outlineView:) withBlock:^(id sself, id item, NSView* outlineView) {
-            int height = [sself yl_rowHeightForItem:item outlineView:outlineView];
-
+        [objc_getClass("IDEIssueNavigatorDataCell") aspect_hookSelector:@selector(rowHeightForItem:outlineView:) withOptions:AspectPositionInstead usingBlock:^(id<AspectInfo> info, id item, NSView* outlineView) {
+            int height = 0;
+            [info.originalInvocation invoke];
+            [info.originalInvocation getReturnValue:&height];
+            
             if ([item subtitle]) {
-                height += [[item subtitle] boundingRectWithSize:NSMakeSize([(NSObject*)sself width], INT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{ NSFontAttributeName: [NSFont fontWithName:@"LucidaGrande" size:11.0] }].size.height;
+                height += [[item subtitle] boundingRectWithSize:NSMakeSize([(NSObject*)info.instance width], INT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{ NSFontAttributeName: [NSFont fontWithName:@"LucidaGrande" size:11.0] }].size.height;
             }
             
-            return height;
-        }];
+            [info.originalInvocation setReturnValue:&height];
+        } error:nil];
     }
     return self;
 }

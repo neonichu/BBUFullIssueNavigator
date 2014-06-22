@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1B6037519570954000A2105 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B6037419570954000A2105 /* Aspects.m */; };
 		A1B815E618F9D3AF0027B26D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B815E518F9D3AF0027B26D /* AppKit.framework */; };
 		A1B815E818F9D3AF0027B26D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B815E718F9D3AF0027B26D /* Foundation.framework */; };
 		A1B815EE18F9D3AF0027B26D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1B815EC18F9D3AF0027B26D /* InfoPlist.strings */; };
 		A1B815F118F9D3AF0027B26D /* BBUFullIssueNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B815F018F9D3AF0027B26D /* BBUFullIssueNavigator.m */; };
-		A1B815FA18F9D3D10027B26D /* NSObject+YOLO.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B815F918F9D3D10027B26D /* NSObject+YOLO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1B6037319570954000A2105 /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Aspects.h; path = contrib/Aspects.h; sourceTree = SOURCE_ROOT; };
+		A1B6037419570954000A2105 /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Aspects.m; path = contrib/Aspects.m; sourceTree = SOURCE_ROOT; };
 		A1B815E218F9D3AF0027B26D /* BBUFullIssueNavigator.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBUFullIssueNavigator.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B815E518F9D3AF0027B26D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		A1B815E718F9D3AF0027B26D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -23,8 +25,6 @@
 		A1B815EF18F9D3AF0027B26D /* BBUFullIssueNavigator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBUFullIssueNavigator.h; sourceTree = "<group>"; };
 		A1B815F018F9D3AF0027B26D /* BBUFullIssueNavigator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBUFullIssueNavigator.m; sourceTree = "<group>"; };
 		A1B815F218F9D3AF0027B26D /* BBUFullIssueNavigator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BBUFullIssueNavigator-Prefix.pch"; sourceTree = "<group>"; };
-		A1B815F818F9D3D10027B26D /* NSObject+YOLO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+YOLO.h"; path = "contrib/NSObject+YOLO.h"; sourceTree = SOURCE_ROOT; };
-		A1B815F918F9D3D10027B26D /* NSObject+YOLO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YOLO.m"; path = "contrib/NSObject+YOLO.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,10 +69,10 @@
 		A1B815E918F9D3AF0027B26D /* BBUFullIssueNavigator */ = {
 			isa = PBXGroup;
 			children = (
+				A1B6037319570954000A2105 /* Aspects.h */,
+				A1B6037419570954000A2105 /* Aspects.m */,
 				A1B815EF18F9D3AF0027B26D /* BBUFullIssueNavigator.h */,
 				A1B815F018F9D3AF0027B26D /* BBUFullIssueNavigator.m */,
-				A1B815F818F9D3D10027B26D /* NSObject+YOLO.h */,
-				A1B815F918F9D3D10027B26D /* NSObject+YOLO.m */,
 				A1B815EA18F9D3AF0027B26D /* Supporting Files */,
 			);
 			path = BBUFullIssueNavigator;
@@ -150,8 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1B815FA18F9D3D10027B26D /* NSObject+YOLO.m in Sources */,
 				A1B815F118F9D3AF0027B26D /* BBUFullIssueNavigator.m in Sources */,
+				A1B6037519570954000A2105 /* Aspects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
